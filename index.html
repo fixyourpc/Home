@@ -3,339 +3,204 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0b1220">
-<meta name="description" content="Onsite Computer Support provides professional desktop, laptop, printer, scanner, networking and IT support for homes, shops and offices.">
-<meta name="keywords" content="onsite computer support, computer repair, laptop repair, printer support, scanner support, IT support, home computer service">
-<meta name="author" content="Onsite Computer Support">
-<title>Onsite Computer Support | Professional IT Support</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080f20">
+
+<title>FixYourPC | Computer & Laptop Support</title>
+<meta name="description" content="FixYourPC provides desktop, laptop, printer, scanner, Windows, software and network support. Get your first 60 minutes consultation free.">
+<meta name="keywords" content="computer repair, laptop repair, printer support, scanner support, remote computer support, Kolkata computer service">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://fixyourpc.github.io/">
 
 <style>
 :root{
---primary:#3978ff;
---dark:#0b1220;
---light:#f4f7fc;
---text:#172033;
---muted:#68758a;
---border:#e4eaf3;
+--bg:#080f20;
+--panel:#111d32;
+--panel2:#172640;
+--blue:#3985ff;
+--cyan:#37d5e8;
+--white:#f4f7ff;
+--muted:#a1aec4;
+--green:#35d399;
+--border:rgba(255,255,255,.09);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:var(--light);
-color:var(--text);
+font-family:Inter,system-ui,-apple-system,Arial,sans-serif;
+background:var(--bg);color:var(--white);
+line-height:1.6;padding-bottom:85px;
 }
 a{text-decoration:none;color:inherit}
-.container{width:92%;max-width:1150px;margin:auto}
-
-/* HEADER */
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+.container{width:min(1100px,92%);margin:auto}
 header{
-background:#0b1220;
-color:white;
-position:sticky;
-top:0;
-z-index:100;
+position:sticky;top:0;z-index:100;
+background:rgba(8,15,32,.95);
+backdrop-filter:blur(18px);
+border-bottom:1px solid var(--border);
 }
 .nav{
-height:75px;
-display:flex;
-align-items:center;
+height:70px;display:flex;align-items:center;
 justify-content:space-between;
-gap:15px;
 }
-.logo{
-font-size:20px;
-font-weight:800;
-line-height:1.2;
+.logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:850}
+.logo-icon{
+width:40px;height:40px;border-radius:13px;
+background:linear-gradient(135deg,var(--blue),var(--cyan));
+display:grid;place-items:center;font-size:22px;
 }
-.logo span{color:#55a0ff}
-.logo small{
-display:block;
-font-size:10px;
-font-weight:400;
-color:#9caec7;
-letter-spacing:1.5px;
-margin-top:4px;
-}
-nav{display:flex;gap:23px;align-items:center}
-nav a{font-size:14px;color:#d6deed}
-nav a:hover{color:#63a5ff}
-.nav-btn{
-background:var(--primary);
-padding:12px 17px;
-border-radius:8px;
-color:white;
-font-weight:bold;
-font-size:13px;
-}
-
-/* HERO */
-.hero{
-background:
-radial-gradient(circle at 80% 20%,#244c8b,transparent 40%),
-linear-gradient(130deg,#0b1220,#132746);
-color:white;
-padding:85px 0;
-}
-.hero-grid{
-display:grid;
-grid-template-columns:1.2fr .8fr;
-align-items:center;
-gap:45px;
-}
-.tag{
-display:inline-block;
-padding:9px 15px;
-border:1px solid #ffffff35;
-border-radius:30px;
-color:#a8d2ff;
-font-size:12px;
-letter-spacing:1px;
-}
-.hero h1{
-font-size:clamp(38px,5vw,62px);
-line-height:1.1;
-margin:24px 0;
-}
-.hero h1 span{color:#69a5ff}
-.hero p{
-color:#c5d0e2;
-font-size:17px;
-line-height:1.8;
-max-width:600px;
-}
-.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+.logo span{color:var(--cyan)}
+.nav-links{display:flex;gap:23px;color:var(--muted);font-size:14px}
+.nav-links a:hover{color:white}
 .btn{
-display:inline-block;
-padding:15px 22px;
-border-radius:9px;
-font-weight:bold;
-border:none;
-cursor:pointer;
-font-size:14px;
+border:0;border-radius:12px;padding:13px 20px;
+font-weight:750;display:inline-flex;align-items:center;
+justify-content:center;gap:8px;transition:.2s;
 }
-.btn-primary{background:var(--primary);color:white}
-.btn-outline{border:1px solid #ffffff55;color:white}
-.btn:hover{opacity:.88}
-.hero-art{
-background:linear-gradient(145deg,#ffffff22,#ffffff08);
-border:1px solid #ffffff30;
-padding:35px;
-border-radius:25px;
-text-align:center;
-box-shadow:0 25px 60px #0004;
+.btn:hover{transform:translateY(-2px)}
+.primary{background:linear-gradient(110deg,var(--blue),#536bff);color:white}
+.secondary{background:var(--panel2);border:1px solid var(--border);color:white}
+.green{background:var(--green);color:#05251c}
+.hero{padding:75px 0 50px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
+.tag{
+display:inline-flex;align-items:center;gap:8px;
+padding:7px 13px;border-radius:30px;
+background:rgba(55,213,232,.1);
+color:var(--cyan);border:1px solid rgba(55,213,232,.2);
+font-size:12px;font-weight:800;letter-spacing:.6px;
 }
-.hero-art .computer{font-size:105px}
-.hero-art h3{margin:15px 0 8px}
-.hero-art p{font-size:13px}
-
-/* SECTION */
-section{padding:75px 0}
-.section-heading{text-align:center;margin-bottom:40px}
-.section-heading small{
-color:var(--primary);
-font-weight:bold;
-letter-spacing:2px;
+h1{font-size:clamp(38px,6vw,65px);line-height:1.08;margin:20px 0}
+.gradient{
+background:linear-gradient(90deg,#4b9bff,#44e0e1);
+-webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.section-heading h2{
-font-size:35px;
-margin:12px 0;
+.hero p{color:var(--muted);font-size:16px;max-width:540px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.trust{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:12px}
+.trust span{color:var(--green);margin-right:5px}
+.hero-visual{
+background:radial-gradient(circle at top right,#244e91,transparent 55%),var(--panel);
+border:1px solid var(--border);border-radius:27px;padding:25px;
+box-shadow:0 25px 80px rgba(0,0,0,.25);
 }
-.section-heading p{
-color:var(--muted);
-line-height:1.7;
-}
-
-/* SERVICES */
-.services{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-}
-.service{
-background:white;
-padding:25px;
-border:1px solid var(--border);
-border-radius:15px;
-transition:.25s;
-}
-.service:hover{
-transform:translateY(-5px);
-box-shadow:0 15px 30px #0000000c;
-}
-.service-icon{
-width:55px;
-height:55px;
-background:#edf3ff;
-display:grid;
-place-items:center;
-border-radius:13px;
-font-size:29px;
-margin-bottom:18px;
-}
-.service h3{margin-bottom:12px;font-size:17px}
-.service p{color:var(--muted);font-size:13px;line-height:1.7}
-
-/* PROCESS */
-.process{background:white}
-.steps{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-}
-.step{
-padding:25px;
-border:1px solid var(--border);
-border-radius:15px;
-}
-.step-number{color:var(--primary);font-weight:bold}
-.step h3{margin:15px 0 10px}
-.step p{color:var(--muted);font-size:14px;line-height:1.7}
-
-/* REQUEST FORM */
-.request{
-background:linear-gradient(130deg,#eaf1ff,#f7f9fc);
-}
-.request-grid{
-display:grid;
-grid-template-columns:.8fr 1.2fr;
-gap:35px;
-align-items:start;
-}
-.request-info h2{
-font-size:38px;
-margin:15px 0;
-}
-.request-info p{
-color:var(--muted);
-line-height:1.8;
-}
-.info-item{
-margin-top:22px;
-font-weight:bold;
-font-size:14px;
-}
-.form-card{
-background:white;
-border-radius:18px;
-padding:30px;
-box-shadow:0 15px 40px #00000009;
-}
-.form-card h3{font-size:23px;margin-bottom:8px}
-.form-card>p{color:var(--muted);font-size:13px;margin-bottom:25px}
-.form-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:17px;
-}
-.field{display:flex;flex-direction:column;gap:8px}
-.field.full{grid-column:1/-1}
-label{font-size:13px;font-weight:bold}
-input,select,textarea{
-width:100%;
-padding:13px;
-border:1px solid #dce3ed;
-border-radius:8px;
-font-size:14px;
-background:white;
-outline:none;
-}
-input:focus,select:focus,textarea:focus{
-border-color:var(--primary);
-box-shadow:0 0 0 3px #3978ff18;
-}
-textarea{min-height:110px;resize:vertical}
-.submit{
-width:100%;
-margin-top:20px;
-background:var(--primary);
-color:white;
-}
-.form-note{
-text-align:center;
-color:var(--muted);
-font-size:11px;
-margin-top:13px;
-line-height:1.6;
-}
-
-/* FAQ */
-.faq-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-details{
-background:white;
-padding:20px;
-border:1px solid var(--border);
-border-radius:12px;
-}
-summary{font-weight:bold;cursor:pointer}
-details p{
-color:var(--muted);
-font-size:14px;
-line-height:1.7;
-margin-top:13px;
-}
-
-/* FOOTER */
-footer{
-background:#0b1220;
-color:#d1d9e8;
-padding:35px 0;
-}
-.footer-row{
-display:flex;
-justify-content:space-between;
-flex-wrap:wrap;
-gap:20px;
-}
-.footer-links{display:flex;gap:20px;font-size:13px}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-width:57px;
-height:57px;
-display:grid;
-place-items:center;
-background:#20c76a;
-color:white;
-border-radius:50%;
-font-size:27px;
-z-index:99;
-box-shadow:0 5px 20px #0003;
-}
-
-/* MOBILE */
-@media(max-width:850px){
-.hero-grid,.request-grid{grid-template-columns:1fr}
-.services{grid-template-columns:repeat(2,1fr)}
-.hero-art{max-width:500px;margin:auto;width:100%}
-}
-@media(max-width:600px){
-.nav{height:68px}
-nav{display:none}
-.logo{font-size:17px}
-.nav-btn{font-size:11px;padding:10px}
-.hero{padding:60px 0}
-.hero h1{font-size:40px}
-.hero p{font-size:15px}
+.screen{background:#091426;border:1px solid var(--border);border-radius:18px;padding:20px}
+.screen-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.status{color:var(--green);font-size:12px}
+.pc-icon{font-size:65px;text-align:center;padding:22px}
+.screen h3{text-align:center}
+.screen p{text-align:center;color:var(--muted);font-size:13px}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.mini{padding:13px;background:var(--panel);border:1px solid var(--border);border-radius:12px;font-size:13px}
+.mini b{display:block;font-size:16px;color:var(--cyan)}
 section{padding:55px 0}
-.services{grid-template-columns:1fr 1fr;gap:10px}
-.service{padding:16px}
-.service h3{font-size:15px}
-.service p{font-size:12px}
-.steps,.faq-grid{grid-template-columns:1fr}
-.form-card{padding:20px}
-.form-grid{grid-template-columns:1fr}
-.field.full{grid-column:auto}
-.request-info h2{font-size:32px}
-.section-heading h2{font-size:29px}
+.section-head{text-align:center;margin-bottom:30px}
+.section-head h2{font-size:clamp(27px,4vw,38px);margin-bottom:8px}
+.section-head p{color:var(--muted);font-size:14px}
+.offer{
+position:relative;overflow:hidden;
+background:linear-gradient(125deg,#123e83,#173a72 55%,#123044);
+border:1px solid rgba(82,164,255,.4);
+border-radius:24px;padding:30px;
+display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;
+}
+.offer h2{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:10px 0}
+.offer p{color:#d3e4ff;font-size:14px}
+.offer-price{text-align:center;position:relative;z-index:1}
+.offer-price strong{font-size:55px;display:block;line-height:1.1}
+.offer-price small{color:#d5e5ff}
+.offer-note{font-size:11px!important;margin-top:13px;opacity:.85}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.service{
+background:var(--panel);border:1px solid var(--border);
+border-radius:18px;padding:22px;transition:.2s;
+}
+.service:hover{transform:translateY(-4px);border-color:var(--blue)}
+.emoji{font-size:30px}
+.service h3{font-size:16px;margin:13px 0 5px}
+.service p{font-size:13px;color:var(--muted);min-height:43px}
+.service button{
+margin-top:16px;background:transparent;color:var(--cyan);
+border:0;font-weight:750;font-size:13px;
+}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.step{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:23px}
+.step-no{color:var(--cyan);font-size:12px;font-weight:800}
+.step h3{margin:8px 0}
+.step p{font-size:13px;color:var(--muted)}
+.pricing{
+background:linear-gradient(145deg,#142b4b,#111d32);
+border:1px solid var(--border);border-radius:22px;padding:28px;
+max-width:650px;margin:auto;text-align:center;
+}
+.pricing h3{font-size:23px}
+.price-line{padding:15px 0;border-bottom:1px solid var(--border)}
+.price-line:last-of-type{border:0}
+.price-line strong{color:var(--green);font-size:25px}
+.pricing p{color:var(--muted);font-size:12px;margin-top:12px}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}
+.contact-info,.form-card{
+background:var(--panel);border:1px solid var(--border);
+border-radius:20px;padding:25px;
+}
+.contact-info h3,.form-card h3{font-size:21px;margin-bottom:12px}
+.contact-info p{font-size:13px;color:var(--muted);margin-bottom:20px}
+.contact-item{padding:14px 0;border-bottom:1px solid var(--border);font-size:14px}
+form{display:grid;gap:13px}
+.field{display:grid;gap:6px}
+label{font-size:12px;color:#c6d4e9;font-weight:700}
+input,select,textarea{
+width:100%;padding:14px;border-radius:11px;
+background:#0a1629;border:1px solid var(--border);
+color:white;outline:none;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--blue)}
+textarea{resize:vertical;min-height:100px}
+select option{background:#101c30}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-message{font-size:12px;color:var(--muted)}
+.check-row{display:flex;align-items:flex-start;gap:9px;font-size:12px;color:#c6d4e9}
+.check-row input{width:17px;height:17px;flex-shrink:0;margin-top:2px}
+.faq{max-width:750px;margin:auto;display:grid;gap:10px}
+details{background:var(--panel);border:1px solid var(--border);border-radius:13px;padding:16px}
+summary{cursor:pointer;font-weight:700;font-size:14px}
+details p{color:var(--muted);font-size:13px;margin-top:12px}
+footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color:var(--muted);font-size:12px}
+footer b{color:white}
+.mobile-nav{
+display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;
+background:#101c30;border-top:1px solid var(--border);
+padding:9px 5px calc(9px + env(safe-area-inset-bottom));
+justify-content:space-around;
+}
+.mobile-nav a{font-size:10px;color:var(--muted);text-align:center}
+.mobile-nav span{display:block;font-size:20px}
+.mobile-nav a.active{color:var(--cyan)}
+.float-wa{
+position:fixed;right:18px;bottom:100px;z-index:150;
+background:#20c879;color:#06251b;border-radius:50%;
+width:55px;height:55px;display:grid;place-items:center;
+font-size:25px;box-shadow:0 5px 25px #0007;
+}
+@media(max-width:750px){
+.nav-links{display:none}
+.hero{padding-top:45px}
+.hero-grid{grid-template-columns:1fr;gap:30px}
+.hero-visual{max-width:500px;margin:auto;width:100%}
+.cards{grid-template-columns:repeat(2,1fr)}
+.steps{grid-template-columns:1fr}
+.offer{grid-template-columns:1fr;text-align:center}
+.offer-price{margin-top:10px}
+.contact-grid{grid-template-columns:1fr}
+.mobile-nav{display:flex}
+}
+@media(max-width:420px){
+.cards{grid-template-columns:1fr}
+.form-row{grid-template-columns:1fr}
+.hero-actions .btn{flex:1}
+.offer{padding:22px}
 }
 </style>
 </head>
@@ -344,365 +209,358 @@ section{padding:55px 0}
 
 <header>
 <div class="container nav">
-
-<a class="logo" href="#">
-ONSITE <span>COMPUTER</span>
-<small>PROFESSIONAL IT SUPPORT</small>
+<a href="#home" class="logo">
+<div class="logo-icon">🖥️</div>
+FixYour<span>PC</span>
 </a>
-
-<nav>
+<nav class="nav-links">
+<a href="#home">Home</a>
 <a href="#services">Services</a>
-<a href="#process">How It Works</a>
-<a href="#request">Contact</a>
-<a href="#faq">FAQ</a>
+<a href="#offer">Free Offer</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
 </nav>
-
-<a href="#request" class="nav-btn">Book Support ↗</a>
-
+<a href="#contact" class="btn primary">Get Support ↗</a>
 </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
+<main>
+
+<section class="hero" id="home">
 <div class="container hero-grid">
-
 <div>
-<span class="tag">PROFESSIONAL IT SUPPORT</span>
-
-<h1>
-Computer Problems?<br>
-<span>We've Got You.</span>
-</h1>
-
-<p>
-Professional onsite computer and IT support for your
-home, shop and office. Get reliable help with desktops,
-laptops, printers, scanners and networking.
-</p>
-
-<div class="actions">
-<a href="#request" class="btn btn-primary">Request Service →</a>
-<a href="#services" class="btn btn-outline">Our Services</a>
+<div class="tag">✦ YOUR PERSONAL TECH SUPPORT</div>
+<h1>Technology problems?<br><span class="gradient">We've got you.</span></h1>
+<p>Computer, laptop, printer and software problems? Get professional assistance without the confusion. Start with your first 60 minutes FREE.</p>
+<div class="hero-actions">
+<a href="#contact" class="btn primary">Get Free Consultation →</a>
+<a href="#services" class="btn secondary">Explore Services</a>
+</div>
+<div class="trust">
+<div><span>✓</span> First 60 minutes free</div>
+<div><span>✓</span> Transparent pricing</div>
+<div><span>✓</span> Friendly support</div>
 </div>
 </div>
 
-<div class="hero-art">
-<div class="computer">🖥️</div>
-<h3>Onsite Computer Support</h3>
-<p>Professional IT Support at Your Doorstep</p>
+<div class="hero-visual">
+<div class="screen">
+<div class="screen-top">
+<b>FixYourPC Support</b>
+<span class="status">● Enquiries open</span>
 </div>
-
+<div class="pc-icon">💻</div>
+<h3>Your PC, back on track.</h3>
+<p>Simple, reliable technical assistance.</p>
+<div class="mini-grid">
+<div class="mini">🖥️ <b>PC & Laptop</b>Technical help</div>
+<div class="mini">🖨️ <b>Printer</b>Setup & errors</div>
+<div class="mini">🌐 <b>Network</b>Wi-Fi & LAN</div>
+<div class="mini">⚙️ <b>Software</b>Windows support</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 
-<!-- SERVICES -->
+<section id="offer">
+<div class="container">
+<div class="offer">
+<div>
+<div class="tag">🎉 FIRST-TIME CUSTOMER OFFER</div>
+<h2>60 Minutes.<br>Absolutely FREE.</h2>
+<p>Experience our technical consultation before paying anything.</p>
+<p class="offer-note">After the first 60 minutes, a ₹49 support charge applies for continued support. Any additional charges will be explained and approved first.</p>
+</div>
+<div class="offer-price">
+<strong>₹0</strong>
+<small>First 60 minutes</small><br><br>
+<a href="#contact" class="btn green">Claim Your Offer →</a>
+</div>
+</div>
+</div>
+</section>
+
 <section id="services">
 <div class="container">
-
-<div class="section-heading">
-<small>OUR SERVICES</small>
-<h2>Complete IT Support Solutions</h2>
-<p>Professional technical assistance for homes, shops and businesses.</p>
+<div class="section-head">
+<h2>What can we fix for you?</h2>
+<p>Choose your problem and send us a service request.</p>
 </div>
-
-<div class="services">
+<div class="cards">
 
 <div class="service">
-<div class="service-icon">🖥️</div>
+<div class="emoji">🖥️</div>
 <h3>Desktop / CPU</h3>
-<p>PC assembly, hardware troubleshooting, Windows installation, upgrades and maintenance.</p>
+<p>Boot problems, slow PC, hardware and system errors.</p>
+<button onclick="chooseService('Desktop / CPU')">Select service →</button>
 </div>
 
 <div class="service">
-<div class="service-icon">💻</div>
+<div class="emoji">💻</div>
 <h3>Laptop Support</h3>
-<p>Laptop troubleshooting, slow performance, OS installation, RAM and SSD upgrades.</p>
+<p>Windows, performance, drivers and troubleshooting.</p>
+<button onclick="chooseService('Laptop')">Select service →</button>
 </div>
 
 <div class="service">
-<div class="service-icon">🖨️</div>
-<h3>Printer Support</h3>
-<p>Printer installation, driver setup, print problems, network printing and configuration.</p>
+<div class="emoji">🖨️</div>
+<h3>Printer</h3>
+<p>Installation, printing errors and connectivity.</p>
+<button onclick="chooseService('Printer')">Select service →</button>
 </div>
 
 <div class="service">
-<div class="service-icon">📠</div>
-<h3>Scanner Support</h3>
-<p>Scanner setup, drivers, scanning software and connectivity troubleshooting.</p>
+<div class="emoji">📠</div>
+<h3>Scanner</h3>
+<p>Scanner installation, driver and scanning issues.</p>
+<button onclick="chooseService('Scanner')">Select service →</button>
 </div>
 
 <div class="service">
-<div class="service-icon">🌐</div>
-<h3>Networking</h3>
-<p>LAN setup, Wi-Fi configuration, router installation and network troubleshooting.</p>
+<div class="emoji">🌐</div>
+<h3>Network & Wi-Fi</h3>
+<p>LAN, internet connectivity and router configuration.</p>
+<button onclick="chooseService('Network & Wi-Fi')">Select service →</button>
 </div>
 
 <div class="service">
-<div class="service-icon">⚙️</div>
+<div class="emoji">⚙️</div>
 <h3>Software & Windows</h3>
-<p>Windows installation, software configuration, updates and system optimization.</p>
-</div>
-
-<div class="service">
-<div class="service-icon">🏢</div>
-<h3>Office & Shop IT</h3>
-<p>Business computer setup, printer sharing and IT infrastructure support.</p>
-</div>
-
-<div class="service">
-<div class="service-icon">🛠️</div>
-<h3>AMC Maintenance</h3>
-<p>Regular maintenance and support plans for offices, shops and multiple devices.</p>
+<p>Software installation, configuration and system errors.</p>
+<button onclick="chooseService('Software & Windows')">Select service →</button>
 </div>
 
 </div>
 </div>
 </section>
 
-<!-- PROCESS -->
-<section class="process" id="process">
+<section>
 <div class="container">
-
-<div class="section-heading">
-<small>HOW IT WORKS</small>
-<h2>Get Technical Support Easily</h2>
+<div class="section-head">
+<h2>How FixYourPC works</h2>
+<p>Getting technical assistance is simple.</p>
 </div>
-
 <div class="steps">
-
 <div class="step">
-<span class="step-number">STEP 01</span>
-<h3>Submit Your Request</h3>
-<p>Choose your device, location and describe your technical problem.</p>
+<div class="step-no">STEP 01</div>
+<h3>📝 Submit your request</h3>
+<p>Tell us about your computer problem and preferred support method.</p>
 </div>
-
 <div class="step">
-<span class="step-number">STEP 02</span>
-<h3>Get a Response</h3>
-<p>We contact you to discuss the issue, availability and applicable charges.</p>
+<div class="step-no">STEP 02</div>
+<h3>🎧 Free consultation</h3>
+<p>Get up to 60 minutes of free initial consultation as a new customer.</p>
 </div>
-
 <div class="step">
-<span class="step-number">STEP 03</span>
-<h3>Get Your Support</h3>
-<p>Arrange onsite or remote assistance where suitable.</p>
+<div class="step-no">STEP 03</div>
+<h3>🚀 Get your solution</h3>
+<p>Continue with paid support for ₹49 after the free consultation, subject to your approval.</p>
 </div>
-
 </div>
 </div>
 </section>
 
-<!-- CUSTOMER REQUEST FORM -->
-<section class="request" id="request">
-<div class="container request-grid">
+<section id="pricing">
+<div class="container">
+<div class="section-head">
+<h2>Simple & transparent pricing</h2>
+<p>Know the consultation charge before proceeding.</p>
+</div>
+<div class="pricing">
+<div class="tag">FIRST-TIME CUSTOMER</div>
+<h3 style="margin-top:15px">Your first experience</h3>
+<div class="price-line">
+<span>Initial consultation (60 minutes)</span><br>
+<strong>FREE ₹0</strong>
+</div>
+<div class="price-line">
+<span>After the first 60 minutes</span><br>
+<strong>₹49</strong>
+</div>
+<p>₹49 is the continuation support charge. Hardware, replacement parts, software licences, travel or other additional costs are separate and will be disclosed before proceeding.</p>
+</div>
+</div>
+</section>
 
-<div class="request-info">
+<section id="contact">
+<div class="container">
+<div class="section-head">
+<h2>Let's solve your problem</h2>
+<p>Submit your details. We'll get in touch with you.</p>
+</div>
 
-<small style="color:#3978ff;font-weight:bold;letter-spacing:2px">
-CONTACT US
-</small>
+<div class="contact-grid">
+<div class="contact-info">
+<h3>Get in touch</h3>
+<p>Tell us what is happening with your device. We'll discuss the next steps with you.</p>
 
-<h2>Need Computer Support?</h2>
-
-<p>
-Tell us about your technical problem.
-Submit your service request and we will contact you.
-</p>
-
-<div class="info-item">📍 Home, Shop & Office Support</div>
-<div class="info-item">🖥️ Multiple Device Support</div>
-<div class="info-item">📞 Phone & WhatsApp Contact</div>
-<div class="info-item">🔧 Onsite & Remote Assistance</div>
-
+<div class="contact-item">💻 <b>Remote Support</b><br><small>Where suitable and with your permission.</small></div>
+<div class="contact-item">🏠 <b>Onsite Support</b><br><small>Subject to location and availability.</small></div>
+<div class="contact-item">🎁 <b>First 60 minutes free</b><br><small>For first-time customers.</small></div>
+<div class="contact-item">📧 <b>Email</b><br><a href="mailto:chandansaha760294@gmail.com">chandansaha760294@gmail.com</a></div>
+<div class="contact-item">📱 <b>WhatsApp</b><br><a href="https://wa.me/917602945485">+91 7602945485</a></div>
 </div>
 
 <div class="form-card">
+<h3>Book Free Consultation</h3>
 
-<h3>Service Request Form</h3>
-<p>Enter your details below. Required fields are marked *.</p>
-
-<!-- CHANGE THIS EMAIL ADDRESS -->
 <form action="https://formsubmit.co/chandansaha760294@gmail.com" method="POST">
 
-<input type="hidden" name="_subject" value="New Customer Enquiry - Onsite Computer Support">
+<input type="hidden" name="_subject" value="New FixYourPC Customer Enquiry">
+<input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_template" value="table">
-<input type="hidden" name="_captcha" value="true">
 
-<div class="form-grid">
-
+<div class="form-row">
 <div class="field">
-<label>Full Name *</label>
-<input type="text" name="Customer Name" placeholder="Enter your name" maxlength="80" required>
+<label for="name">Your name *</label>
+<input id="name" name="Customer Name" placeholder="Enter your name" required maxlength="80">
+</div>
+<div class="field">
+<label for="phone">Mobile number *</label>
+<input id="phone" name="Phone" type="tel" pattern="[0-9+ ]{10,15}" placeholder="Your phone number" required>
+</div>
 </div>
 
 <div class="field">
-<label>Mobile Number *</label>
-<input type="tel" name="Mobile Number" placeholder="Your mobile number" pattern="[+]?[0-9 ()-]{8,18}" required>
+<label for="email">Email address</label>
+<input id="email" name="Email" type="email" placeholder="Your email">
 </div>
 
+<div class="form-row">
 <div class="field">
-<label>Email Address</label>
-<input type="email" name="Email Address" placeholder="Your email address">
-</div>
-
-<div class="field">
-<label>Customer Type *</label>
-<select name="Customer Type" required>
-<option value="">Select</option>
-<option>Home</option>
-<option>Shop</option>
-<option>Office</option>
-<option>School / Institute</option>
-<option>Other</option>
-</select>
-</div>
-
-<div class="field">
-<label>Device Type *</label>
-<select name="Device Type" required>
-<option value="">Select Device</option>
-<option>Desktop PC / CPU</option>
+<label for="device">Select device *</label>
+<select id="device" name="Device" required>
+<option value="">Choose device</option>
+<option>Desktop / CPU</option>
 <option>Laptop</option>
 <option>Printer</option>
 <option>Scanner</option>
-<option>Wi-Fi / Router</option>
-<option>Multiple Devices</option>
+<option>Network / Wi-Fi</option>
+<option>Software / Windows</option>
 <option>Other</option>
 </select>
 </div>
 
 <div class="field">
-<label>Service Required *</label>
-<select name="Service Required" required>
-<option value="">Select Service</option>
-<option>Repair / Troubleshooting</option>
-<option>Installation / Setup</option>
-<option>Windows / Software</option>
-<option>Hardware Upgrade</option>
-<option>Networking</option>
-<option>AMC Maintenance</option>
-<option>Other</option>
-</select>
-</div>
-
-<div class="field">
-<label>Support Method</label>
-<select name="Support Method">
-<option>Onsite Visit</option>
+<label for="place">Support location *</label>
+<select id="place" name="Support Location" required>
+<option value="">Choose location</option>
+<option>Home</option>
+<option>Office / Shop</option>
 <option>Remote Support</option>
-<option>Phone Consultation</option>
-<option>Not Sure</option>
+<option>Other</option>
 </select>
+</div>
 </div>
 
 <div class="field">
-<label>Preferred Time</label>
-<select name="Preferred Time">
-<option>Any Time</option>
-<option>Morning</option>
-<option>Afternoon</option>
-<option>Evening</option>
-</select>
+<label for="problem">Describe your problem *</label>
+<textarea id="problem" name="Problem Description" placeholder="Example: My computer is running slowly..." required maxlength="2000"></textarea>
 </div>
 
-<div class="field full">
-<label>Area / Address *</label>
-<input type="text" name="Area and Address" placeholder="Area, city and nearby landmark" maxlength="180" required>
-</div>
+<label class="check-row">
+<input type="checkbox" name="Free Consultation Offer" value="Requested" required>
+<span>I want to claim the first 60-minute free consultation.</span>
+</label>
 
-<div class="field full">
-<label>Describe Your Problem *</label>
-<textarea name="Problem Description" placeholder="Explain your computer or device problem..." maxlength="1500" required></textarea>
-</div>
+<p class="form-message">By submitting, you agree to be contacted about this request. Never share your passwords or OTPs in this form.</p>
 
-</div>
-
-<button type="submit" class="btn submit">
-Submit Service Request →
-</button>
-
-<p class="form-note">
-Your information will be used to respond to your service enquiry.
-Never submit passwords, OTPs or banking information.
-</p>
-
+<button class="btn primary" type="submit">Submit My Request →</button>
 </form>
 </div>
 </div>
+</div>
 </section>
 
-<!-- FAQ -->
 <section id="faq">
 <div class="container">
-
-<div class="section-heading">
-<small>FAQ</small>
-<h2>Frequently Asked Questions</h2>
+<div class="section-head">
+<h2>Frequently asked questions</h2>
+<p>Everything you need to know before getting started.</p>
 </div>
 
-<div class="faq-grid">
-
+<div class="faq">
 <details>
-<summary>Do you provide home service?</summary>
-<p>Yes, you can request home, shop or office support. Availability will be confirmed after your enquiry.</p>
+<summary>Is the first 60-minute consultation really free?</summary>
+<p>Yes. First-time customers can get up to 60 minutes of initial consultation free of charge.</p>
 </details>
 
 <details>
-<summary>Can I get remote support?</summary>
-<p>Remote support may be possible for suitable software and configuration problems.</p>
+<summary>What happens after 60 minutes?</summary>
+<p>A ₹49 support charge applies for continued support. We will explain the charge before proceeding.</p>
 </details>
 
 <details>
-<summary>What are your service charges?</summary>
-<p>Charges depend on the issue, device, location and parts required. Charges will be discussed before proceeding.</p>
+<summary>Can I get support remotely?</summary>
+<p>Yes, where the issue is suitable for remote troubleshooting. Remote access will only happen with your permission.</p>
 </details>
 
 <details>
-<summary>Do you support multiple computers?</summary>
-<p>Yes. Select Multiple Devices in the form and describe all your devices and problems.</p>
+<summary>Do you provide onsite services?</summary>
+<p>Onsite support can be requested, subject to service area and availability. Any travel or additional charges will be communicated beforehand.</p>
 </details>
 
+<details>
+<summary>Are parts and hardware included in ₹49?</summary>
+<p>No. Hardware, replacement parts, software licences and other additional costs are separate and will be discussed before purchase or work.</p>
+</details>
+
+<details>
+<summary>How do I book a consultation?</summary>
+<p>Complete the booking form above. We will contact you to confirm your request and consultation timing.</p>
+</details>
 </div>
 </div>
 </section>
 
-<!-- FOOTER -->
+</main>
+
 <footer>
-<div class="container footer-row">
-
-<div>
-<div class="logo">
-ONSITE <span>COMPUTER</span>
-<small>PROFESSIONAL IT SUPPORT</small>
+<div class="container">
+<div class="logo" style="justify-content:center;margin-bottom:12px">
+<div class="logo-icon">🖥️</div>FixYour<span>PC</span>
 </div>
-<p style="font-size:12px;margin-top:12px">
-Professional IT Support at Your Doorstep.
-</p>
-</div>
-
-<div class="footer-links">
-<a href="#services">Services</a>
-<a href="#request">Contact</a>
-<a href="#faq">FAQ</a>
-</div>
-
-<div style="font-size:12px">
-© <span id="year"></span> Onsite Computer Support.
-</div>
-
+<p>Your Computer Problems, Our Solution.</p>
+<p style="margin-top:12px">Email: chandansaha760294@gmail.com</p>
+<p>WhatsApp: +91 7602945485</p>
+<p style="margin-top:12px">© <span id="year"></span> FixYourPC. All rights reserved.</p>
+<p style="margin-top:8px">Professional computer & technical support.</p>
 </div>
 </footer>
 
-<!-- WHATSAPP BUTTON: CHANGE YOUR NUMBER -->
-<a class="whatsapp"
-href="https://wa.me/917602945485"
-target="_blank"
-rel="noopener"
-aria-label="Chat on WhatsApp">💬</a>
+<a class="float-wa" href="https://wa.me/917602945485?text=Hello%20FixYourPC%2C%20I%20need%20computer%20support.%20I%20want%20to%20claim%20my%20free%2060-minute%20consultation." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">☏</a>
+
+<nav class="mobile-nav">
+<a href="#home" class="active"><span>⌂</span>Home</a>
+<a href="#services"><span>▦</span>Services</a>
+<a href="#offer"><span>🎁</span>Free Offer</a>
+<a href="#pricing"><span>₹</span>Pricing</a>
+<a href="#contact"><span>✉</span>Contact</a>
+</nav>
 
 <script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
+document.getElementById("year").textContent=new Date().getFullYear();
+
+function chooseService(service){
+document.getElementById("device").value=service;
+document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+
+const sections=document.querySelectorAll("main section[id]");
+const navLinks=document.querySelectorAll(".mobile-nav a");
+
+window.addEventListener("scroll",()=>{
+let current="home";
+sections.forEach(section=>{
+if(window.scrollY>=section.offsetTop-150){
+current=section.id;
+}
+});
+navLinks.forEach(link=>{
+link.classList.toggle("active",link.getAttribute("href")==="#"+current);
+});
+});
 </script>
 
 </body>
