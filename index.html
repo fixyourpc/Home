@@ -331,4 +331,253 @@ footer a{display:block;margin:8px 0}
   <div class="booking-copy">
    <span class="eyebrow" style="color:#76baff">Online support booking</span>
    <h2>Book Your<br>Support Ticket</h2>
-   <p>Submit your computer problem in a few easy steps. We'll receive your request through WhatsApp and get
+   <p>Submit your computer problem in a few easy steps. We'll receive your request through WhatsApp and get back to you.</p>
+   <ul>
+    <li>Easy ticket request</li>
+    <li>Choose your problem category</li>
+    <li>Get a ticket reference number</li>
+    <li>Discuss support timing with us</li>
+    <li>Free consultation for every customer</li>
+   </ul>
+  </div>
+  <div class="booking-form">
+   <h3>🎫 Create Support Ticket</h3>
+   <p class="form-sub">Fill in your details. It takes less than a minute.</p>
+   <form id="ticketForm">
+    <div class="form-grid">
+     <div class="field"><label for="custName">Your Name *</label><input id="custName" required maxlength="60" placeholder="Enter full name"></div>
+     <div class="field"><label for="custPhone">Phone Number *</label><input id="custPhone" type="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required placeholder="10-digit number"></div>
+    </div>
+    <div class="form-grid">
+     <div class="field"><label for="device">Device *</label><select id="device" required><option value="">Select device</option><option>Desktop PC</option><option>Laptop</option><option>Printer</option><option>Router / Network</option><option>Other</option></select></div>
+     <div class="field"><label for="problem">Problem category *</label><select id="problem" required><option value="">Select problem</option><option>Desktop Support</option><option>Laptop Support</option><option>Windows Support</option><option>Printer Support</option><option>Network & Wi-Fi</option><option>Software Support</option><option>Other</option></select></div>
+    </div>
+    <div class="field"><label for="description">Describe Your Problem *</label><textarea id="description" required maxlength="1000" placeholder="Example: My laptop is very slow and takes a long time to start..."></textarea></div>
+    <div class="form-grid">
+     <div class="field"><label for="contactMethod">Preferred contact</label><select id="contactMethod"><option>Phone call</option><option>WhatsApp</option></select></div>
+     <div class="field"><label for="plan">Support plan</label><select id="plan"><option>Free consultation</option><option>Regular support</option><option>₹199 Monthly Membership inquiry</option></select></div>
+    </div>
+    <button class="btn btn-green" type="submit">Submit Ticket on WhatsApp ↗</button>
+    <p class="form-disclaimer">Your request opens WhatsApp for submission. A ticket is not confirmed until we acknowledge it.</p>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">Easy process</span>
+   <h2>How FixYourPC Works</h2>
+   <p>Get assistance without complicated procedures.</p>
+  </div>
+  <div class="steps">
+   <div class="step"><div class="step-no">01</div><h3>Book a Ticket</h3><p>Tell us your name, contact number and computer problem.</p></div>
+   <div class="step"><div class="step-no">02</div><h3>Get Consultation</h3><p>We discuss the issue and explain the possible solution.</p></div>
+   <div class="step"><div class="step-no">03</div><h3>Get Technical Help</h3><p>Enjoy the first 60 minutes free per new session. Continue at ₹25/hour after approval.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section review-area" id="reviews">
+ <div class="container">
+  <div class="review-top">
+   <div>
+    <span class="eyebrow">Customer experiences</span>
+    <h2 style="font-size:29px">Real Customer Reviews</h2>
+    <p style="font-size:12px;color:var(--muted)">Genuine feedback from customers who used our service.</p>
+   </div>
+   <div class="review-controls">
+    <button class="round-btn" aria-label="Previous review" onclick="slideReviews(-1)">‹</button>
+    <button class="round-btn" aria-label="Next review" onclick="slideReviews(1)">›</button>
+   </div>
+  </div>
+  <div class="review-slider" id="reviewSlider"></div>
+  <div style="text-align:center;margin-top:15px">
+   <button class="btn btn-outline" onclick="openReview()">✍️ Submit Your Review</button>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="faq" style="background:white">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">Need to know</span>
+   <h2>Frequently Asked Questions</h2>
+  </div>
+  <div class="faq-grid">
+   <details><summary>Is consultation really free?</summary><p>Yes. Every customer can get free consultation, every time they contact us.</p></details>
+   <details><summary>Is the first hour free for every customer?</summary><p>Yes. The first 60 minutes of technical support are free for every new support session, including returning customers.</p></details>
+   <details><summary>What is the charge after the free hour?</summary><p>₹25 per additional hour. We will explain the charge and get your approval before continuing paid work.</p></details>
+   <details><summary>What is included in ₹199 membership?</summary><p>Membership gives priority booking, free consultation, member support assistance and ticket request tracking. Technical work is charged separately at the agreed rate. Membership lasts 30 days from confirmation.</p></details>
+   <details><summary>Does membership renew automatically?</summary><p>No. Membership is manually confirmed and does not automatically renew.</p></details>
+   <details><summary>How do I book?</summary><p>Use the support ticket form or contact us through WhatsApp. Your request is confirmed after we acknowledge it.</p></details>
+   <details><summary>Can you fix my computer remotely?</summary><p>Remote support may be possible for compatible problems. It requires your permission and a suitable remote support application. Never share your password or OTP.</p></details>
+   <details><summary>Do you offer physical repair or home visits?</summary><p>This website is for phone-based and remote guidance. Ask us separately about availability of physical repair or on-site visits.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="contact-banner">
+   <div><h2>Need Help Right Now?</h2><p>Chat with FixYourPC and tell us what's happening.</p></div>
+   <a href="#" id="contactWA" class="btn btn-white" target="_blank" rel="noopener">Start WhatsApp Chat ↗</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="footer-inner">
+  <div>
+   <a class="brand" href="#home" style="color:white"><span class="brand-icon">F</span><span>Fix<span>YourPC</span></span></a>
+   <p style="margin-top:15px;max-width:300px">Affordable computer support made simple. Free consultation and transparent support pricing for everyone.</p>
+  </div>
+  <div><h3>Quick Links</h3><a href="#services">Our Services</a><a href="#pricing">Pricing & Membership</a><a href="#booking">Book a Ticket</a><a href="#reviews">Customer Reviews</a></div>
+  <div><h3>Contact & Support</h3><a id="footerWA" href="#" target="_blank" rel="noopener">WhatsApp Support ↗</a><a href="#faq">Frequently Asked Questions</a><a href="#booking">Create a Support Ticket</a></div>
+ </div>
+ <div class="footer-bottom"><span>© <span id="year"></span> FixYourPC. All rights reserved.</span><span>Made for affordable computer support.</span></div>
+</footer>
+
+<a class="float-chat" id="floatChat" href="#" target="_blank" rel="noopener"><span class="chat-dot"></span> Chat Support</a>
+
+<div class="mobile-bottom">
+ <a class="btn btn-outline" id="mobileWhatsApp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+ <a class="btn btn-blue" href="#booking">🎫 Book Ticket</a>
+</div>
+
+<div class="modal" id="reviewModal" role="dialog" aria-modal="true" aria-labelledby="reviewTitle">
+ <div class="modal-box">
+  <button class="modal-close" onclick="closeReview()" aria-label="Close">×</button>
+  <h3 id="reviewTitle">Share Your Experience</h3>
+  <p>We appreciate genuine feedback from customers who have used FixYourPC.</p>
+  <form id="reviewForm">
+   <div class="field"><label for="rName">Your Name</label><input id="rName" required maxlength="60" placeholder="Your name"></div>
+   <div class="field"><label for="rProblem">Computer problem</label><select id="rProblem" required><option value="">Select problem</option><option>Desktop Support</option><option>Laptop Support</option><option>Windows Support</option><option>Printer Support</option><option>Network & Wi-Fi</option><option>Software Support</option><option>Other</option></select></div>
+   <div class="field"><label for="rRating">Your rating</label><select id="rRating"><option value="5">★★★★★ - Excellent</option><option value="4">★★★★ - Very Good</option><option value="3">★★★ - Good</option><option value="2">★★ - Average</option><option value="1">★ - Needs Improvement</option></select></div>
+   <div class="field"><label for="rText">Your review</label><textarea id="rText" required maxlength="500" placeholder="Tell us about your experience"></textarea></div>
+   <p class="notice">Your review will be sent for verification. It will not appear publicly until approved.</p>
+   <button class="btn btn-green" type="submit">Send Review on WhatsApp ↗</button>
+  </form>
+ </div>
+</div>
+
+<script>
+// BUSINESS CONTACT SETTINGS
+const BUSINESS_WHATSAPP = "917602945485";
+const BUSINESS_PHONE = "917602945485";
+
+const waBase = "https://wa.me/" + BUSINESS_WHATSAPP;
+function waMessage(message){return waBase+"?text="+encodeURIComponent(message);}
+
+const generalMessage="Hello FixYourPC! I need computer support. Please guide me.";
+["heroWhatsapp","contactWA","footerWA","floatChat","mobileWhatsApp"].forEach(id=>{
+ const el=document.getElementById(id);
+ if(el)el.href=waMessage(generalMessage);
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+
+function chooseService(service){
+ document.getElementById("problem").value=service;
+}
+function membership(){
+ const message="Hello FixYourPC! I want to join the ₹199 monthly membership. Please share membership details and payment instructions.";
+ window.open(waMessage(message),"_blank");
+}
+
+// TICKET BOOKING
+document.getElementById("ticketForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const name=document.getElementById("custName").value.trim();
+ const phone=document.getElementById("custPhone").value.trim();
+ const device=document.getElementById("device").value;
+ const problem=document.getElementById("problem").value;
+ const description=document.getElementById("description").value.trim();
+ const contact=document.getElementById("contactMethod").value;
+ const plan=document.getElementById("plan").value;
+ if(!/^[0-9]{10}$/.test(phone)){
+  alert("Please enter a valid 10-digit phone number.");
+  return;
+ }
+ // Ticket reference is generated locally for the enquiry.
+ const ticket="FYP-"+Date.now().toString().slice(-8);
+ const message=
+ "NEW FIXYOURPC SUPPORT REQUEST\n"+
+ "Ticket Reference: "+ticket+"\n"+
+ "Name: "+name+"\n"+
+ "Customer Phone: "+phone+"\n"+
+ "Device: "+device+"\n"+
+ "Problem: "+problem+"\n"+
+ "Description: "+description+"\n"+
+ "Preferred Contact: "+contact+"\n"+
+ "Plan: "+plan+"\n\n"+
+ "Please confirm my support request.";
+ window.open(waMessage(message),"_blank");
+});
+
+// REAL CUSTOMER REVIEWS
+// Only add reviews after the customer's permission and verification.
+// Keep this list empty until genuine reviews have been received and approved.
+const customerReviews = [
+ // Example format:
+ // {name:"Customer Name",problem:"Laptop Support",rating:5,
+ // text:"Actual feedback approved by this customer."}
+];
+
+function renderReviews(){
+ const slider=document.getElementById("reviewSlider");
+ if(!customerReviews.length){
+  slider.innerHTML='<div class="review-empty" style="width:100%">⭐ Your genuine customer reviews will appear here.<br><br>Be our first reviewer. Use the Submit Your Review button to send your feedback.</div>';
+  document.querySelector(".review-controls").style.display="none";
+  return;
+ }
+ slider.innerHTML=customerReviews.map(r=>{
+  const safeName=escapeHTML(r.name);
+  const safeProblem=escapeHTML(r.problem);
+  const safeText=escapeHTML(r.text);
+  const rating=Math.max(1,Math.min(5,Number(r.rating)||5));
+  return `<article class="review-card">
+   <div class="stars">${"★".repeat(rating)}${"☆".repeat(5-rating)}</div>
+   <blockquote>"${safeText}"</blockquote>
+   <div class="reviewer">
+    <div class="avatar">${safeName.charAt(0).toUpperCase()}</div>
+    <div><strong>${safeName}</strong><small>${safeProblem}</small><div class="verified">✓ Verified customer feedback</div></div>
+   </div>
+  </article>`;
+ }).join("");
+}
+function escapeHTML(value){
+ return String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function slideReviews(direction){
+ document.getElementById("reviewSlider").scrollBy({left:direction*300,behavior:"smooth"});
+}
+renderReviews();
+
+function openReview(){
+ document.getElementById("reviewModal").classList.add("show");
+}
+function closeReview(){
+ document.getElementById("reviewModal").classList.remove("show");
+}
+document.getElementById("reviewModal").addEventListener("click",e=>{
+ if(e.target.id==="reviewModal")closeReview();
+});
+document.getElementById("reviewForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const name=document.getElementById("rName").value.trim();
+ const problem=document.getElementById("rProblem").value;
+ const rating=document.getElementById("rRating").value;
+ const review=document.getElementById("rText").value.trim();
+ const message=
+ "FIXYOURPC CUSTOMER REVIEW FOR VERIFICATION\n"+
+ "Name: "+name+"\nProblem: "+problem+
+ "\nRating: "+rating+"/5\nReview: "+review+
+ "\n\nPlease verify my review for possible publication.";
+ window.open(waMessage(message),"_blank");
+ closeReview();
+});
+</script>
+</body>
+</html>
